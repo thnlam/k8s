@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
     config.vm.box = "generic/ubuntu2004"
     config.vm.box_version = "3.6.8"
     config.vm.hostname = "virtualbox-guest-vm"
-    config.vm.network "private_network", ip: "172.16.16.16"
+    config.vm.network "private_network", ip: "192.168.10.50"
 
     config.vm.provider "virtualbox" do |vb|
         vb.name = "virtualbox-guest-vm"
